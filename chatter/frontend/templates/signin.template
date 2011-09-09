@@ -1,0 +1,58 @@
+{
+    "id" : "main-stage",
+    "type" : "ClutterStage",
+    "color" : "white",
+    "width" : 800,
+    "height" : 600,
+    "title": "Sign in",
+    "children" : [
+      {
+        "id" : "signin-label",
+        "type" : "ClutterText",
+        "x" : 200,
+        "y" : 150,
+        "text" : "Sign in",
+        "color" : "black",
+        "font-name" : "Sans 48px"
+      },
+      {
+        "id" : "signin-userbox",
+        "type" : "ClutterRectangle",
+        "width" : 200,
+        "height" : 20,
+        "x" : 200,
+        "y" : 210,
+        "color" : "gray",
+        "children": [ "signin-user" ]
+      },
+      {
+        "id" : "signin-user",
+        "type" : "ClutterText",
+        "x" : 200,
+        "y" : 210,
+        "text" : "<void>",
+        "color" : "black",
+        "font-name" : "Sans 14px"
+      },
+      {
+        "id" : "signin-password",
+        "type" : "ClutterText",
+        "x" : 200,
+        "y" : 250,
+        "text" : "<void>",
+        "color" : "black",
+        "font-name" : "Sans 14px"
+      }
+    ],
+    "connect" : [
+      {
+        "key-press-event" : "parseKeyPress"
+      }
+    ],
+    "signals" : [
+      { 
+        "name" : "destroy",
+        "handler" : "clutter_main_quit"
+      }
+    ]
+}

@@ -1,0 +1,19 @@
+<irc>
+  <server address="irc.freenode.org" port="6667">
+    <nick>bischjer</nick>
+    <channel id="1">
+      <name>#freenode</name>
+      <autojoin>True</autojoin>
+    </channel>
+    <channel id="2">
+      <name>#django</name>
+      <autojoin>True</autojoin>
+    </channel>
+  </server>
+  <server address="irc.ifi.uio.no" port="6667">
+    <channel id="1">
+      <name>#ping.uio.no</name>
+      <autojoin>True</autojoin>
+    </channel>
+  </server>
+</irc>
